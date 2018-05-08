@@ -1,0 +1,50 @@
+html {
+  font-family: "Roboto", sans-serif; }
+
+.primary-nav {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  margin: .5rem 1rem; }
+  .primary-nav__brand {
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    color: #535353; }
+  .primary-nav__logo {
+    margin-right: .5rem; }
+
+.nav-list__item {
+  display: inline-block;
+  text-transform: uppercase; }
+
+.nav-list__link {
+  color: #535353;
+  text-decoration: none;
+  padding: .3rem; }
+  .nav-list__link--current {
+    border-bottom: 3px solid #535353; }
+
+.full-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .full-page--home {
+    background-image: url("../images/home.jpg"); }
+  .full-page__container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 960px; }
+  .full-page__title {
+    color: #4d4d4d;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: .8; }
+    .full-page__title--emphasis {
+      font-size: 4.5rem;
+      color: #999; }
