@@ -1,6 +1,19 @@
 $font-stack: 'Roboto', sans-serif;
-$primary-color: #535353;
+$text-color: #212529;
+$primary-color: #303b59;
+$nav-home-color: #535353;
 
 html {
     font-family: $font-stack;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.image-responsive {
+    max-width: 100%;
+    height: auto;
 }
