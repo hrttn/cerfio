@@ -11,14 +11,23 @@ html {
   height: auto; }
 
 .primary-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-item-align: stretch;
   align-self: stretch;
   margin: .5rem 1rem; }
   .primary-nav__brand {
     text-decoration: none;
     font-size: 1.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     color: #535353; }
     .primary-nav__brand:hover {
@@ -37,6 +46,8 @@ html {
   .nav-list__link:hover {
     border-bottom: 3px solid #868686;
     color: #868686;
+    -webkit-transition-duration: 80ms;
+    -o-transition-duration: 80ms;
     transition-duration: 80ms; }
   .nav-list__link--current {
     border-bottom: 3px solid #202020;
@@ -44,15 +55,30 @@ html {
 
 .full-page {
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
   .full-page--home {
     background-image: url("../images/home.jpg"); }
   .full-page__container {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     max-width: 960px; }
   .full-page__title {
@@ -87,14 +113,25 @@ html {
     line-height: 1.5; }
 
 .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 2.5rem 0; }
   .features__image {
     margin-right: 1rem; }
   .features__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between; }
   .features__title {
     font-weight: 700;
@@ -113,6 +150,8 @@ html {
     .features__cta:hover {
       text-decoration: underline;
       color: #54679b;
+      -webkit-transition-duration: 80ms;
+      -o-transition-duration: 80ms;
       transition-duration: 80ms; }
 
 .footer__logo {
