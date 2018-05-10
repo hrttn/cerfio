@@ -2,7 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-self: stretch;
-    margin: .5rem 1rem;
+    padding: .5rem 1rem;
+
+    &--deep-page {
+        background-color: $primary-color;
+    }
 
     &__brand {
         text-decoration: none;
@@ -43,6 +47,15 @@
         &--current {
             border-bottom: 3px solid darken($nav-home-color, 20%);
             color: darken($nav-home-color, 20%);
+        }
+
+        &--deep-page {
+            color: #989dac;
+        }
+
+        &--deep-page--current {
+            border-bottom: 3px solid lighten(#989dac, 20%);
+            color: lighten(#989dac, 20%);
         }
     }
 }

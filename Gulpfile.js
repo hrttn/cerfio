@@ -1,6 +1,7 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
+const a11y = require('gulp-a11y');
 
 
 gulp.task('styles', function() {
@@ -17,6 +18,13 @@ gulp.task('autoprefixer', () =>
 		}))
 		.pipe(gulp.dest('./css/'))
 );
+
+ 
+gulp.task('accessibility', function () {
+  return gulp.src('./**/*.html')
+    .pipe(a11y())
+    .pipe(a11y.reporter());
+});
 
 //Watch task
 gulp.task('default', function() {

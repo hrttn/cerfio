@@ -19,7 +19,9 @@ html {
   justify-content: space-between;
   -ms-flex-item-align: stretch;
   align-self: stretch;
-  margin: .5rem 1rem; }
+  padding: .5rem 1rem; }
+  .primary-nav--deep-page {
+    background-color: #303b59; }
   .primary-nav__brand {
     text-decoration: none;
     font-size: 1.3rem;
@@ -52,6 +54,11 @@ html {
   .nav-list__link--current {
     border-bottom: 3px solid #202020;
     color: #202020; }
+  .nav-list__link--deep-page {
+    color: #989dac; }
+  .nav-list__link--deep-page--current {
+    border-bottom: 3px solid #d0d3da;
+    color: #d0d3da; }
 
 .full-page {
   min-height: 100vh;
@@ -65,8 +72,13 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .full-page--seo {
+    background: url("../images/seo-image.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 60vh; }
   .full-page--home {
-    background-image: url("../images/home.jpg"); }
+    background: url("../images/home.jpg") no-repeat center center;
+    background-size: cover; }
   .full-page__container {
     -webkit-box-flex: 1;
     -ms-flex: 1;
