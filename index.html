@@ -10,8 +10,8 @@
 		integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54="
 		crossorigin="anonymous"
 	/>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -28,13 +28,20 @@
 					/>
 					Cerf.io
 				</a>
-				<ul class="nav-list">
+				<ul class="nav-list--no-mobile">
 					<li class="nav-list__item"><a class="nav-list__link nav-list__link--current" href="/">Home</a></li>
 					<li class="nav-list__item"><a class="nav-list__link" href="/sem">Search Engine Marketing</a></li>
 					<li class="nav-list__item"><a class="nav-list__link" href="/seo">SEO</a></li>
 					<li class="nav-list__item"><a class="nav-list__link" href="/adwords">Adwords</a></li>
 				</ul>
 			</nav>
+			<nav class="secondary-nav">
+					<ul class="nav-list nav-list--mobile">
+						<li class="nav-list__item nav-list__item--mobile"><a class="nav-list__link nav-list__link--deep-page" href="/sem">SEM</a></li>
+						<li class="nav-list__item nav-list__item--mobile"><a class="nav-list__link nav-list__link--deep-page nav-list__link--deep-page--current" href="/seo">SEO</a></li>
+						<li class="nav-list__item nav-list__item--mobile"><a class="nav-list__link nav-list__link--deep-page" href="/adwords">Adwords</a></li>
+					</ul>
+				</nav>
 			<div class="full-page__container">
 				<h1 class="full-page__title">Search Engine Marketing for <span class="full-page__title--emphasis">busy agencies</span>
 				</h1>

@@ -3,6 +3,8 @@ $text-color: #212529;
 $primary-color: #303b59;
 $nav-home-color: #535353;
 
+$break-small: 576px;
+
 html {
     font-family: $font-stack;
 }
@@ -11,6 +13,27 @@ html {
     max-width: 1140px;
     margin: auto;
     padding-top: 3rem;
+
+    &__text {
+        color: $text-color;
+        line-height: 1.5;
+        margin: 1rem;
+    }
+
+    &__list {
+        color: $text-color;
+        line-height: 1.5;
+        list-style-type: square;
+    }
+
+    &__title {
+        color: $primary-color;
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 900;
+        padding: 2rem 0;
+    }
 }
 
 .image-responsive {
