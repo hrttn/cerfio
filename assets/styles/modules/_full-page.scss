@@ -4,18 +4,24 @@
     flex-direction: column;
     align-items: center;
 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
     &--deep-page {
         min-height: 70vh;
     }
     
     &--home {
-        background: url('../images/home.jpg') no-repeat center center;
-        background-size: cover;
+        background-image: url('../images/home.jpg');
     }
 
     &--seo {
-        background: url('../images/seo-image.jpg') no-repeat center center;
-        background-size: cover;
+        background-image: url('../images/seo-image.jpg');
+    }
+
+    &--adwords {
+        background-image: url('../images/adwords-image.jpg');
     }
 
     
@@ -34,11 +40,10 @@
         font-size: 4rem;
         text-transform: uppercase;
         font-weight: 900;
-        opacity: .8;
         margin: 1rem;
 
         &--emphasis {
-            color: #999;
+            color: #303b59;
         }
 
         @media screen and (max-width: $break-small) {
