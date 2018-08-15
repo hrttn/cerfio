@@ -1,0 +1,12 @@
+.image {
+    &--responsive {
+    max-width: 100%;
+    height: auto;
+    }
+
+    &--mobile-hidden {
+        @media screen and (max-width: $break-small) {
+            display: none;
+        }
+    }
+}

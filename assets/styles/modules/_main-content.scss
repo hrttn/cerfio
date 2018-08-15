@@ -24,4 +24,10 @@
         max-width: 25rem;
         line-height: 1.5;
     }
+
+    @media screen and (max-width: $break-small) {
+        margin-top: 0;
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
 }

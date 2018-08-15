@@ -1,10 +1,8 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
-const a11y = require('gulp-a11y');
 const concat = require('gulp-concat');
 const minifyCSS = require('gulp-minify-css');
-const rename = require('gulp-rename');
 
 gulp.task('css', function(){
     return gulp.src('assets/styles/**/*.scss')
